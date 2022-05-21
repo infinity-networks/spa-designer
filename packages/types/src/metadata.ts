@@ -33,8 +33,19 @@ export interface ComLibSchema {
   outputs?: any[];
 }
 
+interface FlowNode {
+  id: string; // nanoid(10)
+  type: string; // 节点类型
+  data: {
+    [x: string]: any;
+    title: string;
+    runtime?: string;
+  };
+  position: { x: number, y: number },
+}
+
 export interface ComFlowSchema {
-  nodes: [];
+  nodes: FlowNode[];
   edges: [];
   paths: [];
 }
@@ -51,7 +62,7 @@ export interface CodeTreeSchema extends ComLibSchema {
 
 export interface RawMetaData {
   focused: string;
-  comDef: Record<string, ComDefSchema>;
+  comDef: Record<string, ComDefSchema>; // nanoid(12)
   comRef: Record<string, ComRefSchema>;
   comLib: Record<string, ComLibSchema>;
   comFlow: ComFlowSchema;

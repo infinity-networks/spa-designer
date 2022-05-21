@@ -1,5 +1,5 @@
 {
-  "name": "vue-renderer",
+  "name": "react-native-renderer",
   "version": "0.0.1",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -12,6 +12,6 @@
     "typescript": "^4.5.3"
   },
   "dependencies": {
-    "vuera": "^0.2.7"
+    "react": "^18.1.0"
   }
 }

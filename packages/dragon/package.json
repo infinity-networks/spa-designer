@@ -1,5 +1,5 @@
 {
-  "name": "vue-renderer",
+  "name": "dragon",
   "version": "0.0.1",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -10,8 +10,5 @@
     "config": "*",
     "tsconfig": "*",
     "typescript": "^4.5.3"
-  },
-  "dependencies": {
-    "vuera": "^0.2.7"
   }
 }

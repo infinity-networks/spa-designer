@@ -1,13 +1,25 @@
 import Frame from "react-frame-component";
 import DndFrame from "./DndFrame";
-import { CodeTreeSchema, ComRefSchema } from "types";
+import { ComTreeSchema, ComRefSchema } from "types";
 
 interface Props {
-  comTree: CodeTreeSchema | null;
+  comTree: ComTreeSchema | null;
 }
 
 const initialContent = `
-
+  <!DOCTYPE html>
+  <html style="width: 100%;height: 100%;">
+  <head>
+    <style>
+      .frame-content {
+        width:100%;
+        height:100%
+      }
+    </style>
+  </head>
+  <body style="margin:0px;width:100%;height: 100%; background: #D9D9D9">
+  </body>
+  </html>
 `;
 
 const Simulator = ({ comTree }: Props) => {
