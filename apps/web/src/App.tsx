@@ -31,9 +31,11 @@ function App() {
   const [nodes, setNodes, onNodesChange] = useNodesState(
     data?.comFlow?.nodes || []
   );
+
   const [edges, setEdges, onEdgesChange] = useEdgesState(
     data?.comFlow?.edges || []
   );
+
   const onConnect = (params: any) => setEdges((eds) => addEdge(params, eds));
 
   const handleOutput = (id: string, sourceHandle: string, ...args: any[]) => {

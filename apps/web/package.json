@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@arco-design/web-react": "^2.33.1",
+    "nanoid": "^3.3.4",
     "react": "^18.0.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",

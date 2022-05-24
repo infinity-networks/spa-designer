@@ -1,14 +1,21 @@
 import { Card, Empty } from "@arco-design/web-react";
 import { ComDepSchema, RawMetaData } from "types";
 
-interface Props {
+interface MaterialItemProps {}
+
+const MaterialItem: React.FC<MaterialItemProps> = ({}) => {
+  return <></>;
+};
+
+interface MaterialLibraryProps {
   comDep: ComDepSchema | null;
   setMetaData: (metaData: RawMetaData) => void;
 }
 
-const SourceItem = () => {};
-
-const MaterialLibrary = ({ comDep, setMetaData }: Props) => {
+const MaterialLibrary: React.FC<MaterialLibraryProps> = ({
+  comDep,
+  setMetaData,
+}) => {
   return (
     <Card title="物料库" bordered={false}>
       {comDep && Object.keys(comDep || {}).length > 0 ? (

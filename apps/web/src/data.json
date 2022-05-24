@@ -12,15 +12,7 @@
   "comRef": {
     "root": { "id": "root", "parentId": "" }
   },
-  "comLib": {
-    "Button": {
-      "props": {},
-      "inputs": [],
-      "outputs": [],
-      "runtime": "......",
-      "dependencies": { "react": "^16.8.6" }
-    }
-  },
+  "comLib": {},
   "comFlow": {
     "nodes": [],
     "edges": []
